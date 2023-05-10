@@ -1,0 +1,50 @@
+Vou criar uma pasta chamada tutorial, vou abrir o 
+VS x CODE e arrastao a pasta tutorial que criei na área
+de trabalho, após abro o terminal, também posso usar o 
+prompt comando, Digito o npm init para criar o arquivo
+package.json, vou instalar a dependência espress que é 
+responsável por gerenciar as rotas = npm install express,
+após instado o express limpo o terminal com cls, 
+vou criar um arquivo "ler" chamado README.md onde vou
+descrever os comandos que eu já executei, vou criar o
+arquivo app que será o arquivo raiz do projeto, dentro 
+deste arquivo app, crio uma constante = const para 
+importar o express = const express = require('express); =
+que importei o express que é uma função e a seguir vou 
+executar está função deste modo ==> express(); e após 
+abrir e fechar o parênteses eu vou atribuir para uma 
+constante = const app = exppress();
+
+==> Após vou criar uma rota:
+O async é para aguardar o processamento onde recebe como
+parâmetros o req , res).
+==> Crio uma função utilizando o aerofunction = 
+=> {
+res.send("Página inicial"); ==> que internamente recebe
+o res.send que refere-se a página inicial.
+app.get('/, async (req, res) => {
+res.send("Página inicial");
+});
+
+Aqui vou executar este projeto, vou utiolizar a function
+listen que será onde vou executar o projeto na porta 8080.
+app.listen(8080), mas vou verificar se está executando
+normalmente, então vou criar uma function,
+app.listen(8080, () => {
+Aqui dentro da function dou um 
+console.log(Aqui coloco uma frase que caracterize que o 
+servidor está ativo e também como devo acessar.
+exemplo = console.log("Servidor iniciado na porta 8080:
+http://localhost:8080");
+
+});
+
+==> E para rodar o projeto uso o comando:
+node app.js.
+copio este endereço e colo no navegador =
+http://localhost:8080 e terei a confirmação 
+que está rodando no navegador.
+==> Se eu altera alguma coisa no res.send tenho que 
+pausar o app.js no VS x CODE.
+
+
